@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container-fluid content">
+      <header>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/udacity.svg" alt="Udacity logo" class="left-block"
+            id="header-img">
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-right" id="title">JAMES OTTAVI</h1>
+          <h4 class="text-right" id="sub-title">FRONT-END NINJA</h4>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col-md-12">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="images/images_src/happy-dog-1000.jpg 1x, images/images_src/happy-dog-1500.jpg 2x" media="(min-width: 1000px)" />
+            <source srcset="images/images_src/happy-dog-800.jpg 1x, images/images_src/happy-dog-1500.jpg 2x" media="(min-width: 800px)" />
+            <source srcset="images/images_src/happy-dog-400.jpg 1x, images/images_src/happy-dog-800.jpg 2x" media="(min-width: 400px)"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="images/images_src/happy-dog-800.jpg" alt="A small, smiling, white puppy wearing a birthday hat" class="center-block" id="main-img"
+            data-target="#dog" data-toggle="modal">
+          </picture>
+          <!--image source: https://unsplash.com/search/photos/dog?photo=BXs8SjVelKs-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>FEATURED WORK</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 text-center">
+          <img src="images/Python.svg" alt="Python programming language logo"
+          class="center-block project-img" data-target="#python"
+          data-toggle="modal">
+          <!--image source: https://commons.wikimedia.org/wiki/File:Python.svg-->
+          <h4>PYTHON PROGRAMS</h4>
+          <p><a href="https://github.com/jaottavi/Movie-Trailer-Project">Movie Trailer Project</a></p>
+        </div>
+        <div class="col-sm-6 col-md-4 text-center">
+          <img src="images/HTML_5 logo.svg" alt="HTML 5 logo"
+          class="center-block project-img" data-target="#html"
+          data-toggle="modal">
+          <!--image source: https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg-->
+          <h4>HTML, CSS, AND JS FUN</h4>
+          <p><a href="#">Portfolio Website</a></p>
+        </div>
+        <div class="col-sm-offset-3 col-md-offset-0 col-sm-6 col-md-4 text-center">
+          <img src="images/R_logo.svg" alt="R logo" class="center-block project-img"
+          data-target="#data_science" data-toggle="modal">
+          <!--image source: https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg-->
+          <h4>R ROUNDABOUTS</h4>
+          <p><a href="https://github.com/jaottavi/Probability-Distribution-Viewer">Probability Distribution Viewer</a></p>
+        </div>
+      </div>
+    <!-- Modal for Happy Dog -->
+      <div class="modal fade" id="dog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">The Happiest Dog</h4>
+                  </div>
+                  <div class="modal-body">
+                      Just thought I'd give you a chance to grin at how
+                      happy this dog is before digging into some projects!
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Enjoy the Page!</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Modal for Python -->
+      <div class="modal fade" id="python" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Movie Trailer Site</h4>
+                  </div>
+                  <div class="modal-body">
+                      In the first part of the Udacity Full-Stack Nanodegree,
+                      I created a movie trailer website with Python.
+                      A file that contained html, css, and js scripts
+                      was used to build the webpage display.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="html" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Portfolio Site</h4>
+                  </div>
+                  <div class="modal-body">
+                      This project involved the creation of this portfolio website! Using the
+                      Bootstrap framework, I created a site that would be responsive across
+                      devices while also minimizing the amount of weight on the site through
+                      use of more SVG's than pictures.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="data_science" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Probability Distribution Viewer</h4>
+                  </div>
+                  <div class="modal-body">
+                      This project involved utilizing R and Shiny to
+                      create a Shiny Server application. The application that
+                      was created allows users to view different probability distributions,
+                      and how changes in specific parameters of those distributions
+                      affects their shape.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
