@@ -1,0 +1,99 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16;
+  background: #fff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#fff, #d3d3d3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fff, #d3d3d3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fff, #d3d3d3); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fff, #d3d3d3); /* Standard syntax */
+}
+
+h1 {
+  font-weight: 300;
+}
+
+header {
+  margin: 10px;
+  border-bottom: #7d97ad 2px solid;
+}
+
+h3 {
+  color: #7d97ad;
+}
+
+.intro {
+  font-weight: 165;
+}
+
+.project-img {
+  width: 90%;
+  max-width: 250px;
+}
+
+#header-img {
+  max-width:50px;
+  vertical-align: middle;
+}
+
+#main-img {
+  width:90%;
+  max-width: 900px;
+  vertical-align: "middle";
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  p {
+    font-size: 1em;
+  }
+  .project-img {
+    width: 50%;
+  }
+  #title {
+    text-align: center;
+  }
+  #sub-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .content {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
